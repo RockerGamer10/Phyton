@@ -1,5 +1,5 @@
-cap=0
-gain=0
+cap=-1
+gain=-1
 year=-1
 
 print("Ingrese el capital, la tasa de interés, y la cantidad de años")
@@ -8,9 +8,10 @@ print("Intereses menor a 100")
 
 while (cap<1): cap=int(input())
 capF=float(cap)
+while (gain<0 or gain>100): gain=int(input())
+
 while (year<0): year=int(input())
-while (gain<0 | gain>100): gain=int(input())
-rate=float(gain*0.01)
+rate=float((gain*0.01)+1)
 
 for i in range(year):
     capF=capF*rate
