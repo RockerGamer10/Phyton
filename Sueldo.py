@@ -1,6 +1,3 @@
-from tkinter import DoubleVar
-
-
 print("Ingrese su sueldo")
 sueldo=int(input())
 
